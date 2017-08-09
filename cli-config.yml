@@ -1,0 +1,29 @@
+container-name-run : "samplemb-express-run"
+container-name-tools : "samplemb-express-tools"
+
+host-path-run : "."
+host-path-tools : "."
+
+container-path-run : "/app"
+container-path-tools : "/app"
+
+container-port-map : "8080:8080"
+container-port-map-debug : "5858:5858"
+
+dockerfile-run : "Dockerfile"
+dockerfile-tools : "Dockerfile-tools"
+
+image-name-run : "samplemb-express-run"
+image-name-tools : "samplemb-express-tools"
+
+build-cmd-run : "npm install --production --unsafe-perm"
+test-cmd : "npm run test"
+build-cmd-debug : "npm install --unsafe-perm"
+
+run-cmd : ""
+debug-cmd : "npm run debug"
+stop-cmd : "npm stop"
+
+version : "0.0.3"
+ibm-generated-id : "467c48a5-5cc4-43a8-b14c-986ff9b4808d"
+credentials-filepath : "server/localdev-config.json, vcap-local.js, credentials.json"
